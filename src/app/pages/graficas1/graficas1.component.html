@@ -1,3 +1,60 @@
-<p>
-  graficas1 works!
-</p>
+<!-- <div class="row">
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <div style="display: block">
+                    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
+                          </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+
+<div class="row">
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graficos.grafico1.leyenda}}</h4>
+                <app-grafico-dona [labelDona]="graficos.grafico1.labels" [dataDona]="graficos.grafico1.data" [typeDona]="graficos.grafico1.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graficos.grafico2.leyenda}}</h4>
+                <app-grafico-dona [labelDona]="graficos.grafico2.labels" [dataDona]="graficos.grafico2.data" [typeDona]="graficos.grafico2.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graficos.grafico3.leyenda}}</h4>
+                <app-grafico-dona [labelDona]="graficos.grafico3.labels" [dataDona]="graficos.grafico3.data" [typeDona]="graficos.grafico3.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{graficos.grafico4.leyenda}}</h4>
+                <app-grafico-dona [labelDona]="graficos.grafico4.labels" [dataDona]="graficos.grafico4.data" [typeDona]="graficos.grafico4.type"></app-grafico-dona>
+            </div>
+        </div>
+    </div>
+
+</div>
