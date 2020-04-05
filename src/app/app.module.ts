@@ -14,6 +14,9 @@ import { RegisterComponent } from './login/register.component';
 import { FormsModule } from '@angular/forms';
 // import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
+// servicios
+import { ServicesModule } from './services/services.module';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
