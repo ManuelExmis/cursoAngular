@@ -6,6 +6,7 @@ import { UsuarioService } from '../services/usuario/usuario.service';
 
 declare function init_plugins();
 declare const gapi: any;
+var auth2;
 
 @Component({
   selector: 'app-login',
@@ -36,7 +37,7 @@ export class LoginComponent implements OnInit {
 
     gapi.load('auth2', () => {
 
-      this.auth2 = gapi.auth2.init({
+      auth2 = gapi.auth2.init({
         client_id: '916431318010-e6cvdiqi3djg85m2dk20ktb5sjcm8blc.apps.googleusercontent.com',
         cookiepolicy: 'single_host_policy',
         scope: 'profile email'
@@ -50,7 +51,7 @@ export class LoginComponent implements OnInit {
 
   attachSignin( element ) {
 
-    this.auth2.attachClickHandler( element, {}, (googleUser) => {
+    auth2.attachClickHandler( element, {}, (googleUser) => {
 
       // let profile = googleUser.getBasicProfile();
 
