@@ -4,7 +4,9 @@ import { URL_SERVICIOS } from '../../config/config';
 @Injectable()
 export class SubirArchivoService {
 
-  constructor() { }
+  constructor() { 
+    console.log('inicio subir archivo');
+  }
 
   subirArchivo( archivo: File, tipo: string, id: string ) {
     return new Promise( (resolve, reject) => {

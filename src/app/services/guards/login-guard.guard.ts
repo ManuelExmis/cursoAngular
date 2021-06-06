@@ -16,7 +16,6 @@ export class LoginGuardGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
     if ( this._usuarioService.estaLogeado() ) {
-      console.log('paso por el login guard');
       return true;
     } else {
       console.log('Bloqueado por el usuario');
